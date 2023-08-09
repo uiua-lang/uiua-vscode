@@ -33,7 +33,8 @@
     ],
     "configurationDefaults": {
       "[uiua]": {
-        "editor.semanticHighlighting.enabled": true
+        "editor.semanticHighlighting.enabled": true,
+        "editor.fontFamily": "DejaVu Sans Mono"
       }
     }
   },
