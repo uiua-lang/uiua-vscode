@@ -31,7 +31,12 @@
         "command": "uiua-vscode.helloWorld",
         "title": "Hello World"
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "[uiua]": {
+        "editor.semanticHighlighting.enabled": true
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

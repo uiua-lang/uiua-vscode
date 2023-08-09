@@ -12,15 +12,16 @@ export function activate(context: vscode.ExtensionContext) {
 		documentSelector: [{ scheme: 'file', language: 'uiua' }]
 	};
 
-	let disposable = new LanguageClient(
-		'UiuaLS',
+	let client = new LanguageClient(
+		'Uiua',
 		'Uiua Language Server',
 		serverOptions,
 		clientOptions,
-	).start();
+		true,
+	);
+	let disposable = client.start();
 
 	context.subscriptions.push(disposable);
 }
 
-// This method is called when your extension is deactivated
 export function deactivate() { }
