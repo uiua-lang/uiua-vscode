@@ -34,7 +34,8 @@
     "configurationDefaults": {
       "[uiua]": {
         "editor.semanticHighlighting.enabled": true,
-        "editor.fontFamily": "DejaVu Sans Mono, monospace"
+        "editor.fontFamily": "DejaVu Sans Mono, monospace",
+        "editor.fontSize": 16
       }
     },
     "grammars": [
