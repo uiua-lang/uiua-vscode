@@ -7,9 +7,8 @@
     "vscode": "^1.81.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages"
   ],
-  "activationEvents": [],
   "main": "./out/extension.js",
   "icon": "uiua-logo.png",
   "contributes": {
@@ -24,12 +23,6 @@
           ".ua"
         ],
         "configuration": "./language-configuration.json"
-      }
-    ],
-    "commands": [
-      {
-        "command": "uiua-vscode.helloWorld",
-        "title": "Hello World"
       }
     ],
     "configurationDefaults": {
