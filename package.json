@@ -2,7 +2,12 @@
   "name": "uiua-vscode",
   "displayName": "Uiua",
   "description": "Uiua language support",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uiua-lang/uiua-vscode"
+  },
   "version": "0.0.1",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -11,6 +16,7 @@
   ],
   "main": "./out/extension.js",
   "icon": "uiua-logo.png",
+  "activationEvents": [],
   "contributes": {
     "languages": [
       {
