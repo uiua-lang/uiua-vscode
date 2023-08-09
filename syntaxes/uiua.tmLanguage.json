@@ -1,0 +1,82 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Uiua",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#characters"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#strand"
+		},
+		{
+			"include": "#noadic"
+		},
+		{
+			"include": "#monadic"
+		},
+		{
+			"include": "#dyadic"
+		},
+		{
+			"include": "#mod1"
+		},
+		{
+			"include": "#mod2"
+		}
+	],
+	"repository": {
+		"comments": {
+			"name": "comment.line.uiua",
+			"match": "#.*$"
+		},
+		"strings": {
+			"name": "constant.character.escape",
+			"match": "(\".*\"|\\$.*$)"
+		},
+		"characters": {
+			"name": "constant.character.escape",
+			"match": "'\\\\?.'"
+		},
+		"numbers": {
+			"name": "constant.numeric.uiua",
+			"match": "\\d+(\\.\\d+(e[+-]?\\d+)?)?"
+		},
+		"strand": {
+			"name": "comment.line",
+			"match": "_"
+		},
+		"noadic": {
+			"name": "entity.name.tag.uiua",
+			"match": "[·⚂ηπτ∞]"
+		},
+		"monadic": {
+			"name": "string.quoted",
+			"match": "[.;¬±¯⌵√○⌊⌈⁅⧻∴△⇡⊢⌀⇌♭⋯⍉∧⍋⊙⊛⊝:⎋↬|]"
+		},
+		"dyadic": {
+			"name": "entity.name.function.uiua",
+			"match": "[,~=≠<≤>≥+\\-×÷◿ⁿₙ↧↥∠≅⊂⊟⍛⊡⊏↙↘↯↻◫‡∊⌕⊗⊕⊘!]"
+		},
+		"mod1": {
+			"name": "entity.name.type.uiua",
+			"match": "[/⌿\\\\∵≡≕≍≐⫫⊞⊠⍥↶]"
+		},
+		"mod2": {
+			"name": "keyword.control.uiua",
+			"match": "[⍜⍚?]"
+		}
+	},
+	"scopeName": "source.uiua"
+}

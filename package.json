@@ -34,9 +34,16 @@
     "configurationDefaults": {
       "[uiua]": {
         "editor.semanticHighlighting.enabled": true,
-        "editor.fontFamily": "DejaVu Sans Mono"
+        "editor.fontFamily": "DejaVu Sans Mono, monospace"
       }
-    }
+    },
+    "grammars": [
+      {
+        "language": "uiua",
+        "scopeName": "source.uiua",
+        "path": "./syntaxes/uiua.tmLanguage.json"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
