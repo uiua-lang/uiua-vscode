@@ -18,6 +18,9 @@
 			"include": "#strand"
 		},
 		{
+			"include": "#stack"
+		},
+		{
 			"include": "#noadic"
 		},
 		{
@@ -31,20 +34,27 @@
 		},
 		{
 			"include": "#mod2"
+		},
+		{
+			"include": "#idents"
 		}
 	],
 	"repository": {
+		"idents": {
+			"name": "variable.parameter.uiua",
+			"match": "\\b[a-zA-Z]+\\b"
+		},
 		"comments": {
 			"name": "comment.line.uiua",
 			"match": "#.*$"
 		},
 		"strings": {
 			"name": "constant.character.escape",
-			"match": "(\".*\"|\\$.*$)"
+			"match": "\"[^\"]*\"|\\$.*$"
 		},
 		"characters": {
 			"name": "constant.character.escape",
-			"match": "'\\\\?.'"
+			"match": "@\\\\?."
 		},
 		"numbers": {
 			"name": "constant.numeric.uiua",
@@ -54,25 +64,28 @@
 			"name": "comment.line",
 			"match": "_"
 		},
+		"stack": {
+			"match": "[.,∶:;·↑\\^↓~]|\\bnoo(p)?\\b|\\bloa(d)?\\b"
+		},
 		"noadic": {
 			"name": "entity.name.tag.uiua",
-			"match": "([↬⚂ηπτ∞]|rec(u(r)?)?|rand(o(m)?)?|eta|pi|tau|inf(i(n(i(t(y)?)?)?)?)?|(scanline|args|now))"
+			"match": "[↬⚂ηπτ∞]|\\brec(u(r)?)?\\b|\\brand(o(m)?)?\\b|\\beta\\b|\\bpi\\b|\\btau\\b|\\binf(i(n(i(t(y)?)?)?)?)?\\b|\\bscanline\\b|\\bargs\\b|\\bnow\\b|\\btag\\b"
 		},
 		"monadic": {
 			"name": "string.quoted",
-			"match": "([¬±¯⌵√○⌊⌈⁅⧻∴△⇡⊢⇌♭⋯⍉⌂⊛⊝□↲!⎋]|not|sig(n)?|abs(o(l(u(t(e( (v(a(l(u(e)?)?)?)?)?)?)?)?)?)?)?|sqr(t)?|sin(e)?|flo(o(r)?)?|cei(l(i(n(g)?)?)?)?|rou(n(d)?)?|len(g(t(h)?)?)?|rank|sha(p(e)?)?|rang(e)?|fir(s(t)?)?|rev(e(r(s(e)?)?)?)?|des(h(a(p(e)?)?)?)?|bit(s)?|tra(n(s(p(o(s(e)?)?)?)?)?)?|gra(d(e)?)?|cla(s(s(i(f(y)?)?)?)?)?|ded(u(p(l(i(c(a(t(e)?)?)?)?)?)?)?)?|con(s(t(a(n(t)?)?)?)?)?|wai(t)?|bre(a(k)?)?|(freadallbytes|freadallstr|tcpconnect|tcpaccept|tcplisten|audioplay|flistdir|fisfile|fexists|fcreate|imshow|imread|import|close|sleep|fopen|print|parse|prin|show|var|gen))"
+			"match": "[¬±¯`⌵√○⌊⌈⁅⧻∴△⇡⊢⇌♭⋯⍉⌂⊛⊝□↲!⎋]|\\bnot\\b|\\bsig(n)?\\b|\\babs(o(l(u(t(e( (v(a(l(u(e)?)?)?)?)?)?)?)?)?)?)?\\b|\\bsqr(t)?\\b|\\bsin(e)?\\b|\\bflo(o(r)?)?\\b|\\bcei(l(i(n(g)?)?)?)?\\b|\\brou(n(d)?)?\\b|\\blen(g(t(h)?)?)?\\b|\\brank\\b|\\bsha(p(e)?)?\\b|\\brang(e)?\\b|\\bfir(s(t)?)?\\b|\\brev(e(r(s(e)?)?)?)?\\b|\\bdes(h(a(p(e)?)?)?)?\\b|\\bbit(s)?\\b|\\btra(n(s(p(o(s(e)?)?)?)?)?)?\\b|\\bgra(d(e)?)?\\b|\\bcla(s(s(i(f(y)?)?)?)?)?\\b|\\bded(u(p(l(i(c(a(t(e)?)?)?)?)?)?)?)?\\b|\\bcon(s(t(a(n(t)?)?)?)?)?\\b|\\bwai(t)?\\b|\\bbre(a(k)?)?\\b|\\bfreadallbytes\\b|\\bfreadallstr\\b|\\btcpconnect\\b|\\btcpaccept\\b|\\btcplisten\\b|\\baudioplay\\b|\\bflistdir\\b|\\bfisfile\\b|\\bfexists\\b|\\bfcreate\\b|\\bimshow\\b|\\bimread\\b|\\bimport\\b|\\bclose\\b|\\bsleep\\b|\\bfopen\\b|\\bprint\\b|\\bparse\\b|\\bprin\\b|\\bshow\\b|\\btype\\b|\\bvar\\b|\\bgen\\b"
 		},
 		"dyadic": {
 			"name": "entity.name.function.uiua",
-			"match": "([=≠<≤>≥+\\-×÷◿ⁿₙ↧↥∠⊂⊟≅⊡⊏↙↘↯↻◫‡⌕∊⊗⍤]|mod(u(l(u(s)?)?)?)?|pow(e(r)?)?|log(a(r(i(t(h(m)?)?)?)?)?)?|min(i(m(u(m)?)?)?)?|max(i(m(u(m)?)?)?)?|ata(n(g(e(n(t)?)?)?)?)?|joi(n)?|cou(p(l(e)?)?)?|mat(c(h)?)?|pi(c(k)?)?|sel(e(c(t)?)?)?|tak(e)?|dro(p)?|res(h(a(p(e)?)?)?)?|rot(a(t(e)?)?)?|win(d(o(w(s)?)?)?)?|repl(i(c(a(t(e)?)?)?)?)?|fin(d)?|mem(b(e(r)?)?)?|ind(e(x(o(f)?)?)?)?|ass(e(r(t)?)?)?|(readuntil|readbytes|fwriteall|imwrite|readstr|write|use))"
+			"match": "[==≠<≤>≥+\\-×\\*÷%◿ⁿₙ↧↥∠⊂⊟≅⊡⊏↙↘↯↻◫‡⌕∊⊗⍤]|\\bmod(u(l(u(s)?)?)?)?\\b|\\bpow(e(r)?)?\\b|\\blog(a(r(i(t(h(m)?)?)?)?)?)?\\b|\\bmin(i(m(u(m)?)?)?)?\\b|\\bmax(i(m(u(m)?)?)?)?\\b|\\bata(n(g(e(n(t)?)?)?)?)?\\b|\\bjoi(n)?\\b|\\bcou(p(l(e)?)?)?\\b|\\bmat(c(h)?)?\\b|\\bpi(c(k)?)?\\b|\\bsel(e(c(t)?)?)?\\b|\\btak(e)?\\b|\\bdro(p)?\\b|\\bres(h(a(p(e)?)?)?)?\\b|\\brot(a(t(e)?)?)?\\b|\\bwin(d(o(w(s)?)?)?)?\\b|\\brepl(i(c(a(t(e)?)?)?)?)?\\b|\\bfin(d)?\\b|\\bmem(b(e(r)?)?)?\\b|\\bind(e(x(o(f)?)?)?)?\\b|\\bass(e(r(t)?)?)?\\b|\\breaduntil\\b|\\breadbytes\\b|\\bfwriteall\\b|\\bimwrite\\b|\\breadstr\\b|\\bwrite\\b|\\buse\\b"
 		},
 		"mod1": {
 			"name": "entity.name.type.uiua",
-			"match": "([~/∧\\\\∵≡⫫⊞⊠⍥⊕⊜↶]|fol(d)?|eac(h)?|row(s)?|dis(t(r(i(b(u(t(e)?)?)?)?)?)?)?|tab(l(e)?)?|cro(s(s)?)?|repe(a(t)?)?|gro(u(p)?)?|par(t(i(t(i(o(n)?)?)?)?)?)?|inv(e(r(t)?)?)?|())"
+			"match": "[/∧\\\\∵≡∺⊞⊠⍥⊕⊜↶]|\\bfol(d)?\\b|\\beac(h)?\\b|\\brow(s)?\\b|\\bdis(t(r(i(b(u(t(e)?)?)?)?)?)?)?\\b|\\btab(l(e)?)?\\b|\\bcro(s(s)?)?\\b|\\brepe(a(t)?)?\\b|\\bgro(u(p)?)?\\b|\\bpar(t(i(t(i(o(n)?)?)?)?)?)?\\b|\\binv(e(r(t)?)?)?\\b"
 		},
 		"mod2": {
 			"name": "keyword.control.uiua",
-			"match": "([⍜⍛⍚⍣↰]|und(e(r)?)?|fil(l)?|lev(e(l)?)?|try|spa(w(n)?)?|())"
+			"match": "[⍜⍛⍚⍣↰]|\\bund(e(r)?)?\\b|\\bfil(l)?\\b|\\blev(e(l)?)?\\b|\\btry\\b|\\bspa(w(n)?)?\\b"
 		}
 	},
 	"scopeName": "source.uiua"
