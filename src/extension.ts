@@ -4,7 +4,7 @@ import { homedir } from 'os';
 
 export function activate(context: vscode.ExtensionContext) {
 	let serverOptions: ServerOptions = {
-		command: homedir() + "/repos/uiua/target/debug/uiua.exe",
+		command: "uiua",
 		args: ["lsp"],
 		options: {}
 	};
