@@ -34,6 +34,7 @@
     "configurationDefaults": {
       "[uiua]": {
         "editor.semanticHighlighting.enabled": true,
+        "editor.inlayHints.enabled": "on",
         "editor.fontFamily": "DejaVu Sans Mono, monospace",
         "editor.fontSize": 16
       }

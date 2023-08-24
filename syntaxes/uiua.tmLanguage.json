@@ -65,27 +65,27 @@
 			"match": "_"
 		},
 		"stack": {
-			"match": "[.,∶:;·↑\\^↓~]|\\bnoo(p)?\\b|\\bloa(d)?\\b"
+			"match": "[.,∶:;·↷↶⇵]|\\bnoo(p)?\\b|\\brol(l)?\\b|\\bunr(o(l(l)?)?)?\\b|\\brest(a(c(k)?)?)?\\b"
 		},
 		"noadic": {
 			"name": "entity.name.tag.uiua",
-			"match": "[↬⚂ηπτ∞]|\\brec(u(r)?)?\\b|\\brand(o(m)?)?\\b|\\beta\\b|\\bpi\\b|\\btau\\b|\\binf(i(n(i(t(y)?)?)?)?)?\\b|\\bscanline\\b|\\bargs\\b|\\bnow\\b|\\btag\\b"
+			"match": "[⚂ηπτ∞]|\\brand(o(m)?)?\\b|\\beta\\b|\\bpi\\b|\\btau\\b|\\binf(i(n(i(t(y)?)?)?)?)?\\b|\\bscanline\\b|\\bargs\\b|\\bnow\\b|\\btag\\b"
 		},
 		"monadic": {
 			"name": "string.quoted",
-			"match": "[¬±¯`⌵√○⌊⌈⁅⧻∴△⇡⊢⇌♭⋯⍉⌂⊛⊝□↲!⎋]|\\bnot\\b|\\bsig(n)?\\b|\\babs(o(l(u(t(e( (v(a(l(u(e)?)?)?)?)?)?)?)?)?)?)?\\b|\\bsqr(t)?\\b|\\bsin(e)?\\b|\\bflo(o(r)?)?\\b|\\bcei(l(i(n(g)?)?)?)?\\b|\\brou(n(d)?)?\\b|\\blen(g(t(h)?)?)?\\b|\\brank\\b|\\bsha(p(e)?)?\\b|\\brang(e)?\\b|\\bfir(s(t)?)?\\b|\\brev(e(r(s(e)?)?)?)?\\b|\\bdes(h(a(p(e)?)?)?)?\\b|\\bbit(s)?\\b|\\btra(n(s(p(o(s(e)?)?)?)?)?)?\\b|\\bgra(d(e)?)?\\b|\\bcla(s(s(i(f(y)?)?)?)?)?\\b|\\bded(u(p(l(i(c(a(t(e)?)?)?)?)?)?)?)?\\b|\\bcon(s(t(a(n(t)?)?)?)?)?\\b|\\bwai(t)?\\b|\\bbre(a(k)?)?\\b|\\bfreadallbytes\\b|\\bfreadallstr\\b|\\btcpconnect\\b|\\btcpaccept\\b|\\btcplisten\\b|\\baudioplay\\b|\\bflistdir\\b|\\bfisfile\\b|\\bfexists\\b|\\bfcreate\\b|\\bimshow\\b|\\bimread\\b|\\bimport\\b|\\bclose\\b|\\bsleep\\b|\\bfopen\\b|\\bprint\\b|\\bparse\\b|\\bprin\\b|\\bshow\\b|\\btype\\b|\\bvar\\b|\\bgen\\b"
+			"match": "[¬±¯`⌵√○⌊⌈⁅⧻∴△⇡⊢⇌♭⋯⍉⌂⊛⊝□↲!⎋↬]|\\bnot\\b|\\bsig(n)?\\b|\\babs(o(l(u(t(e( (v(a(l(u(e)?)?)?)?)?)?)?)?)?)?)?\\b|\\bsqr(t)?\\b|\\bsin(e)?\\b|\\bflo(o(r)?)?\\b|\\bcei(l(i(n(g)?)?)?)?\\b|\\brou(n(d)?)?\\b|\\blen(g(t(h)?)?)?\\b|\\brank\\b|\\bsha(p(e)?)?\\b|\\brang(e)?\\b|\\bfir(s(t)?)?\\b|\\brev(e(r(s(e)?)?)?)?\\b|\\bdes(h(a(p(e)?)?)?)?\\b|\\bbit(s)?\\b|\\btra(n(s(p(o(s(e)?)?)?)?)?)?\\b|\\bgra(d(e)?)?\\b|\\bcla(s(s(i(f(y)?)?)?)?)?\\b|\\bded(u(p(l(i(c(a(t(e)?)?)?)?)?)?)?)?\\b|\\bcon(s(t(a(n(t)?)?)?)?)?\\b|\\bwai(t)?\\b|\\bbre(a(k)?)?\\b|\\brec(u(r)?)?\\b|\\btcpsetnonblocking\\b|\\bfreadallbytes\\b|\\bfreadallstr\\b|\\btcpconnect\\b|\\btcpaccept\\b|\\btcplisten\\b|\\baudioplay\\b|\\bflistdir\\b|\\btcpaddr\\b|\\bfisfile\\b|\\bfexists\\b|\\bfcreate\\b|\\bimshow\\b|\\bimread\\b|\\bimport\\b|\\bclose\\b|\\bsleep\\b|\\bfopen\\b|\\bprint\\b|\\bparse\\b|\\bprin\\b|\\bshow\\b|\\btype\\b|\\bvar\\b|\\bgen\\b"
 		},
 		"dyadic": {
 			"name": "entity.name.function.uiua",
-			"match": "[==≠<≤>≥+\\-×\\*÷%◿ⁿₙ↧↥∠⊂⊟≅⊡⊏↙↘↯↻◫‡⌕∊⊗⍤]|\\bmod(u(l(u(s)?)?)?)?\\b|\\bpow(e(r)?)?\\b|\\blog(a(r(i(t(h(m)?)?)?)?)?)?\\b|\\bmin(i(m(u(m)?)?)?)?\\b|\\bmax(i(m(u(m)?)?)?)?\\b|\\bata(n(g(e(n(t)?)?)?)?)?\\b|\\bjoi(n)?\\b|\\bcou(p(l(e)?)?)?\\b|\\bmat(c(h)?)?\\b|\\bpi(c(k)?)?\\b|\\bsel(e(c(t)?)?)?\\b|\\btak(e)?\\b|\\bdro(p)?\\b|\\bres(h(a(p(e)?)?)?)?\\b|\\brot(a(t(e)?)?)?\\b|\\bwin(d(o(w(s)?)?)?)?\\b|\\brepl(i(c(a(t(e)?)?)?)?)?\\b|\\bfin(d)?\\b|\\bmem(b(e(r)?)?)?\\b|\\bind(e(x(o(f)?)?)?)?\\b|\\bass(e(r(t)?)?)?\\b|\\breaduntil\\b|\\breadbytes\\b|\\bfwriteall\\b|\\bimwrite\\b|\\breadstr\\b|\\bwrite\\b|\\buse\\b"
+			"match": "[==≠<≤>≥+\\-×\\*÷%◿ⁿₙ↧↥∠⊂⊟≅⊡⊏↙↘↯↻◫‡⌕∊⊗⍤]|\\bmod(u(l(u(s)?)?)?)?\\b|\\bpow(e(r)?)?\\b|\\blog(a(r(i(t(h(m)?)?)?)?)?)?\\b|\\bmin(i(m(u(m)?)?)?)?\\b|\\bmax(i(m(u(m)?)?)?)?\\b|\\bata(n(g(e(n(t)?)?)?)?)?\\b|\\bjoi(n)?\\b|\\bcou(p(l(e)?)?)?\\b|\\bmat(c(h)?)?\\b|\\bpi(c(k)?)?\\b|\\bsel(e(c(t)?)?)?\\b|\\btak(e)?\\b|\\bdro(p)?\\b|\\bresh(a(p(e)?)?)?\\b|\\brot(a(t(e)?)?)?\\b|\\bwin(d(o(w(s)?)?)?)?\\b|\\brepl(i(c(a(t(e)?)?)?)?)?\\b|\\bfin(d)?\\b|\\bmem(b(e(r)?)?)?\\b|\\bind(e(x(o(f)?)?)?)?\\b|\\bass(e(r(t)?)?)?\\b|\\btcpsetwritetimeout\\b|\\btcpsetreadtimeout\\b|\\breaduntil\\b|\\breadbytes\\b|\\bfwriteall\\b|\\bimwrite\\b|\\breadstr\\b|\\bwrite\\b|\\buse\\b"
 		},
 		"mod1": {
 			"name": "entity.name.type.uiua",
-			"match": "[/∧\\\\∵≡∺⊞⊠⍥⊕⊜↶]|\\bfol(d)?\\b|\\beac(h)?\\b|\\brow(s)?\\b|\\bdis(t(r(i(b(u(t(e)?)?)?)?)?)?)?\\b|\\btab(l(e)?)?\\b|\\bcro(s(s)?)?\\b|\\brepe(a(t)?)?\\b|\\bgro(u(p)?)?\\b|\\bpar(t(i(t(i(o(n)?)?)?)?)?)?\\b|\\binv(e(r(t)?)?)?\\b"
+			"match": "[/∧\\\\∵≡∺⊞⊠⍥⊕⊜⌀]|\\bfol(d)?\\b|\\beac(h)?\\b|\\brow(s)?\\b|\\bdis(t(r(i(b(u(t(e)?)?)?)?)?)?)?\\b|\\btab(l(e)?)?\\b|\\bcro(s(s)?)?\\b|\\brepe(a(t)?)?\\b|\\bgro(u(p)?)?\\b|\\bpar(t(i(t(i(o(n)?)?)?)?)?)?\\b|\\binv(e(r(t)?)?)?\\b"
 		},
 		"mod2": {
 			"name": "keyword.control.uiua",
-			"match": "[⍜⍛⍚⍣↰]|\\bund(e(r)?)?\\b|\\bfil(l)?\\b|\\blev(e(l)?)?\\b|\\btry\\b|\\bspa(w(n)?)?\\b"
+			"match": "[⍜⍛⍚⊃⍣↰]|\\bund(e(r)?)?\\b|\\bfil(l)?\\b|\\blev(e(l)?)?\\b|\\bfor(k)?\\b|\\btry\\b|\\bspa(w(n)?)?\\b"
 		}
 	},
 	"scopeName": "source.uiua"
