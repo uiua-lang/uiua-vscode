@@ -65,27 +65,27 @@
 			"match": "_"
 		},
 		"stack": {
-			"match": "[.,∶:;·↷↶⇵]|\\bnoo(p)?\\b|\\brol(l)?\\b|\\bunr(o(l(l)?)?)?\\b|\\brest(a(c(k)?)?)?\\b"
+			"match": "[.,∶:;·↷↶⇵]|(?<![a-zA-Z])(noo(p)?|rol(l)?|unr(o(l(l)?)?)?|rest(a(c(k)?)?)?)(?![a-zA-Z])"
 		},
 		"noadic": {
 			"name": "entity.name.tag.uiua",
-			"match": "[⚂ηπτ∞]|\\brand(o(m)?)?\\b|\\beta\\b|\\bpi\\b|\\btau\\b|\\binf(i(n(i(t(y)?)?)?)?)?\\b|\\bscanline\\b|\\bargs\\b|\\bnow\\b|\\btag\\b"
+			"match": "[⚂ηπτ∞]|(?<![a-zA-Z])(rand(o(m)?)?|eta|pi|tau|inf(i(n(i(t(y)?)?)?)?)?|scanline|args|now|tag)(?![a-zA-Z])"
 		},
 		"monadic": {
 			"name": "string.quoted",
-			"match": "[¬±¯`⌵√○⌊⌈⁅⧻∴△⇡⊢⇌♭⋯⍉⌂⊛⊝□↲!⎋↬]|\\bnot\\b|\\bsig(n)?\\b|\\babs(o(l(u(t(e( (v(a(l(u(e)?)?)?)?)?)?)?)?)?)?)?\\b|\\bsqr(t)?\\b|\\bsin(e)?\\b|\\bflo(o(r)?)?\\b|\\bcei(l(i(n(g)?)?)?)?\\b|\\brou(n(d)?)?\\b|\\blen(g(t(h)?)?)?\\b|\\brank\\b|\\bsha(p(e)?)?\\b|\\brang(e)?\\b|\\bfir(s(t)?)?\\b|\\brev(e(r(s(e)?)?)?)?\\b|\\bdes(h(a(p(e)?)?)?)?\\b|\\bbit(s)?\\b|\\btra(n(s(p(o(s(e)?)?)?)?)?)?\\b|\\bgra(d(e)?)?\\b|\\bcla(s(s(i(f(y)?)?)?)?)?\\b|\\bded(u(p(l(i(c(a(t(e)?)?)?)?)?)?)?)?\\b|\\bcon(s(t(a(n(t)?)?)?)?)?\\b|\\bwai(t)?\\b|\\bbre(a(k)?)?\\b|\\brec(u(r)?)?\\b|\\btcpsetnonblocking\\b|\\bfreadallbytes\\b|\\bfreadallstr\\b|\\btcpconnect\\b|\\btcpaccept\\b|\\btcplisten\\b|\\baudioplay\\b|\\bflistdir\\b|\\btcpaddr\\b|\\bfisfile\\b|\\bfexists\\b|\\bfcreate\\b|\\bimshow\\b|\\bimread\\b|\\bimport\\b|\\bclose\\b|\\bsleep\\b|\\bfopen\\b|\\bprint\\b|\\bparse\\b|\\bprin\\b|\\bshow\\b|\\btype\\b|\\bvar\\b|\\bgen\\b"
+			"match": "[¬±¯`⌵√○⌊⌈⁅⧻∴△⇡⊢⇌♭⋯⍉⌂⊛⊝□↲!⎋↬]|(?<![a-zA-Z])(not|sig(n)?|abs(o(l(u(t(e( (v(a(l(u(e)?)?)?)?)?)?)?)?)?)?)?|sqr(t)?|sin(e)?|flo(o(r)?)?|cei(l(i(n(g)?)?)?)?|rou(n(d)?)?|len(g(t(h)?)?)?|rank|sha(p(e)?)?|rang(e)?|fir(s(t)?)?|rev(e(r(s(e)?)?)?)?|des(h(a(p(e)?)?)?)?|bit(s)?|tra(n(s(p(o(s(e)?)?)?)?)?)?|gra(d(e)?)?|cla(s(s(i(f(y)?)?)?)?)?|ded(u(p(l(i(c(a(t(e)?)?)?)?)?)?)?)?|con(s(t(a(n(t)?)?)?)?)?|wai(t)?|bre(a(k)?)?|rec(u(r)?)?|tcpsetnonblocking|freadallbytes|freadallstr|tcpconnect|tcpaccept|tcplisten|audioplay|flistdir|tcpaddr|fisfile|fexists|fcreate|imshow|imread|import|close|sleep|fopen|print|parse|prin|show|type|var|gen)(?![a-zA-Z])"
 		},
 		"dyadic": {
 			"name": "entity.name.function.uiua",
-			"match": "[==≠<≤>≥+\\-×\\*÷%◿ⁿₙ↧↥∠⊂⊟≅⊡⊏↙↘↯↻◫‡⌕∊⊗⍤]|\\bmod(u(l(u(s)?)?)?)?\\b|\\bpow(e(r)?)?\\b|\\blog(a(r(i(t(h(m)?)?)?)?)?)?\\b|\\bmin(i(m(u(m)?)?)?)?\\b|\\bmax(i(m(u(m)?)?)?)?\\b|\\bata(n(g(e(n(t)?)?)?)?)?\\b|\\bjoi(n)?\\b|\\bcou(p(l(e)?)?)?\\b|\\bmat(c(h)?)?\\b|\\bpi(c(k)?)?\\b|\\bsel(e(c(t)?)?)?\\b|\\btak(e)?\\b|\\bdro(p)?\\b|\\bresh(a(p(e)?)?)?\\b|\\brot(a(t(e)?)?)?\\b|\\bwin(d(o(w(s)?)?)?)?\\b|\\brepl(i(c(a(t(e)?)?)?)?)?\\b|\\bfin(d)?\\b|\\bmem(b(e(r)?)?)?\\b|\\bind(e(x(o(f)?)?)?)?\\b|\\bass(e(r(t)?)?)?\\b|\\btcpsetwritetimeout\\b|\\btcpsetreadtimeout\\b|\\breaduntil\\b|\\breadbytes\\b|\\bfwriteall\\b|\\bimwrite\\b|\\breadstr\\b|\\bwrite\\b|\\buse\\b"
+			"match": "[==≠<≤>≥+\\-×\\*÷%◿ⁿₙ↧↥∠⊂⊟≅⊡⊏↙↘↯↻◫‡⌕∊⊗⍤]|(?<![a-zA-Z])(mod(u(l(u(s)?)?)?)?|pow(e(r)?)?|log(a(r(i(t(h(m)?)?)?)?)?)?|min(i(m(u(m)?)?)?)?|max(i(m(u(m)?)?)?)?|ata(n(g(e(n(t)?)?)?)?)?|joi(n)?|cou(p(l(e)?)?)?|mat(c(h)?)?|pi(c(k)?)?|sel(e(c(t)?)?)?|tak(e)?|dro(p)?|resh(a(p(e)?)?)?|rot(a(t(e)?)?)?|win(d(o(w(s)?)?)?)?|repl(i(c(a(t(e)?)?)?)?)?|fin(d)?|mem(b(e(r)?)?)?|ind(e(x(o(f)?)?)?)?|ass(e(r(t)?)?)?|tcpsetwritetimeout|tcpsetreadtimeout|readuntil|readbytes|fwriteall|imwrite|readstr|write|use)(?![a-zA-Z])"
 		},
 		"mod1": {
 			"name": "entity.name.type.uiua",
-			"match": "[/∧\\\\∵≡∺⊞⊠⍥⊕⊜⌀]|\\bfol(d)?\\b|\\beac(h)?\\b|\\brow(s)?\\b|\\bdis(t(r(i(b(u(t(e)?)?)?)?)?)?)?\\b|\\btab(l(e)?)?\\b|\\bcro(s(s)?)?\\b|\\brepe(a(t)?)?\\b|\\bgro(u(p)?)?\\b|\\bpar(t(i(t(i(o(n)?)?)?)?)?)?\\b|\\binv(e(r(t)?)?)?\\b"
+			"match": "[/∧\\\\∵≡∺⊞⊠⍥⊕⊜⌀]|(?<![a-zA-Z])(fol(d)?|eac(h)?|row(s)?|dis(t(r(i(b(u(t(e)?)?)?)?)?)?)?|tab(l(e)?)?|cro(s(s)?)?|repe(a(t)?)?|gro(u(p)?)?|par(t(i(t(i(o(n)?)?)?)?)?)?|inv(e(r(t)?)?)?)(?![a-zA-Z])"
 		},
 		"mod2": {
 			"name": "keyword.control.uiua",
-			"match": "[⍜⍛⍚⊃⍣↰]|\\bund(e(r)?)?\\b|\\bfil(l)?\\b|\\blev(e(l)?)?\\b|\\bfor(k)?\\b|\\btry\\b|\\bspa(w(n)?)?\\b"
+			"match": "[⍜⍛⍚⊃⍣↰]|(?<![a-zA-Z])(und(e(r)?)?|fil(l)?|lev(e(l)?)?|for(k)?|try|spa(w(n)?)?)(?![a-zA-Z])"
 		}
 	},
 	"scopeName": "source.uiua"
