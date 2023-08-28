@@ -1,10 +1,13 @@
 import * as vscode from 'vscode';
 import { LanguageClient, LanguageClientOptions, ServerOptions } from 'vscode-languageclient';
-import { homedir } from 'os';
 
 export function activate(context: vscode.ExtensionContext) {
+	var path = vscode.workspace.getConfiguration('uiua').get<string>('executablePath') ?? '';
+	if (path === '') {
+		path = "uiua";
+	}
 	let serverOptions: ServerOptions = {
-		command: "uiua",
+		command: path,
 		args: ["lsp"],
 		options: {}
 	};
