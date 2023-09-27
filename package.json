@@ -11,7 +11,7 @@
   "publisher": "uiua-lang",
   "readme": "README.md",
   "engines": {
-    "vscode": "^1.81.0"
+    "vscode": "*"
   },
   "categories": [
     "Programming Languages"
