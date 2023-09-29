@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import { LanguageClient, LanguageClientOptions, ServerOptions } from 'vscode-languageclient';
 
 export function activate(context: vscode.ExtensionContext) {
-	var path = vscode.workspace.getConfiguration('uiua').get<string>('executablePath') ?? 'uiua';
+	var path = vscode.workspace.getConfiguration('uiua').get<string>('executablePath') || 'uiua';
 	let serverOptions: ServerOptions = {
 		command: path,
 		args: ['lsp'],
