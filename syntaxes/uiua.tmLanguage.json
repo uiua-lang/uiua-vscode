@@ -128,7 +128,7 @@
 		},
 		"mod2": {
 			"name": "keyword.control.uiua",
-			"match": "[⍜⍛⍚⊃⍣]|(?<![a-zA-Z])(und(e(r)?)?|fil(l)?|lev(e(l)?)?|for(k)?|try)(?![a-zA-Z])"
+			"match": "[⍜⍛⍚'⊃⍣]|(?<![a-zA-Z])(und(e(r)?)?|fil(l)?|lev(e(l)?)?|for(k)?|try)(?![a-zA-Z])"
 		}
 	},
 	"scopeName": "source.uiua"
