@@ -108,7 +108,7 @@
 			"match": "_"
 		},
 		"stack": {
-			"match": "[.,∶:;·↷↶⇵~]|(?<![a-zA-Z])(noo(p)?|rol(l)?|unr(o(l(l)?)?)?|rest(a(c(k)?)?)?)(?![a-zA-Z])"
+			"match": "[.,∶:;·↷↶→⇵~]|(?<![a-zA-Z])(noo(p)?|rol(l)?|unr(o(l(l)?)?)?|dip|rest(a(c(k)?)?)?|dump)(?![a-zA-Z])"
 		},
 		"noadic": {
 			"name": "entity.name.tag.uiua",
@@ -116,7 +116,7 @@
 		},
 		"monadic": {
 			"name": "string.quoted",
-			"match": "[¬±¯`⌵√○⌊⌈⁅⧻∴△⇡⊢⇌♭⋯⍉⌂⊛⊝□↲!⎋↬]|(?<![a-zA-Z])(not|sig(n)?|abs(o(l(u(t(e( (v(a(l(u(e)?)?)?)?)?)?)?)?)?)?)?|sqr(t)?|sin(e)?|flo(o(r)?)?|cei(l(i(n(g)?)?)?)?|rou(n(d)?)?|len(g(t(h)?)?)?|rank|sha(p(e)?)?|rang(e)?|fir(s(t)?)?|rev(e(r(s(e)?)?)?)?|des(h(a(p(e)?)?)?)?|bit(s)?|tra(n(s(p(o(s(e)?)?)?)?)?)?|gra(d(e)?)?|cla(s(s(i(f(y)?)?)?)?)?|ded(u(p(l(i(c(a(t(e)?)?)?)?)?)?)?)?|con(s(t(a(n(t)?)?)?)?)?|wai(t)?|bre(a(k)?)?|rec(u(r)?)?|&tcpaddr|&tcpsnb|&tcpc|&tcpa|&tcpl|&runc|&runi|&frab|&fras|parse|&ast|&ims|&imd|&fif|&fld|&var|type|&cl|&sl|&ap|&ad|&cd|&fe|&fc|&fo|&pf|gen|&i|&p|&s)(?![a-zA-Z])"
+			"match": "[¬±¯`⌵√○⌊⌈⁅⧻△⇡⊢⇌♭⋯⍉⌂⊛⊝□↲!⎋↬]|(?<![a-zA-Z])(not|sig(n)?|abs(o(l(u(t(e( (v(a(l(u(e)?)?)?)?)?)?)?)?)?)?)?|sqr(t)?|sin(e)?|flo(o(r)?)?|cei(l(i(n(g)?)?)?)?|rou(n(d)?)?|len(g(t(h)?)?)?|sha(p(e)?)?|rang(e)?|fir(s(t)?)?|rev(e(r(s(e)?)?)?)?|des(h(a(p(e)?)?)?)?|bit(s)?|tra(n(s(p(o(s(e)?)?)?)?)?)?|gra(d(e)?)?|cla(s(s(i(f(y)?)?)?)?)?|ded(u(p(l(i(c(a(t(e)?)?)?)?)?)?)?)?|con(s(t(a(n(t)?)?)?)?)?|wai(t)?|bre(a(k)?)?|rec(u(r)?)?|&tcpaddr|&tcpsnb|&tcpc|&tcpa|&tcpl|&frab|&fras|&runc|&runi|parse|&ast|&ims|&imd|&fif|&fld|&var|type|&ap|&ad|&fe|&fc|&fo|&cl|&sl|&cd|&pf|gen|&i|&p|&s)(?![a-zA-Z])"
 		},
 		"dyadic": {
 			"name": "entity.name.function.uiua",
