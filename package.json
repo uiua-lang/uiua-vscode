@@ -35,10 +35,10 @@
     ],
     "configurationDefaults": {
       "[uiua]": {
-        "editor.semanticHighlighting.enabled": true,
+        "editor.semanticHighlighting.enabled": "configuredByTheme",
         "editor.inlayHints.enabled": "on",
-        "editor.fontFamily": "DejaVu Sans Mono, monospace",
-        "editor.fontSize": 16,
+        "editor.fontFamily": "Uiua386, DejaVu Sans Mono, monospace",
+        "editor.suggestFontSize": 16,
         "editor.unicodeHighlight.ambiguousCharacters": false
       }
     },
