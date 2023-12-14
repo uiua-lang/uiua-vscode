@@ -14,7 +14,8 @@
     "vscode": ">=1.0.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "main": "./out/extension.js",
   "icon": "uiua-logo.png",
@@ -59,6 +60,12 @@
         "language": "uiua",
         "scopeName": "source.uiua",
         "path": "./syntaxes/uiua.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "uiua",
+        "path": "./snippets/uiua.json"
       }
     ]
   },

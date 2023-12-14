@@ -5,4 +5,7 @@ Requires Uiua to be [installed](https://uiua.org/install).
 Features
 - Syntax highlighting
 - Formatting
-- Glyph hover
+- Snippets
+- Glyph and binding hover
+- Same-file rename
+- Same-file goto definition

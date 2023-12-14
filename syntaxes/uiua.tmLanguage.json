@@ -108,7 +108,7 @@
 			"match": "_"
 		},
 		"stack": {
-			"match": "[.,::;?⸮∘]|(?<![a-zA-Z])(duplicate|over|flip|pop|stack|trac(e)?|id(e(n(t(i(t(y)?)?)?)?)?)?)(?![a-zA-Z])"
+			"match": "[.,:;?⸮∘]|(?<![a-zA-Z])(duplicate|over|flip|pop|stack|trac(e)?|id(e(n(t(i(t(y)?)?)?)?)?)?)(?![a-zA-Z])"
 		},
 		"noadic": {
 			"name": "entity.name.tag.uiua",
