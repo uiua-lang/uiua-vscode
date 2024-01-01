@@ -9,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
 		options: {}
 	};
 	let clientOptions: LanguageClientOptions = {
-		documentSelector: [{ scheme: 'file', language: 'uiua' }]
+		documentSelector: [{ language: 'uiua' }]
 	};
 
 	let client = new LanguageClient(
