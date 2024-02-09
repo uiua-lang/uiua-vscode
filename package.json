@@ -38,7 +38,7 @@
       "[uiua]": {
         "editor.semanticHighlighting.enabled": "configuredByTheme",
         "editor.inlayHints.enabled": "on",
-        "editor.fontFamily": "Uiua386, DejaVu Sans Mono, monospace",
+        "editor.fontFamily": "Uiua386Color, Uiua386, DejaVu Sans Mono, monospace",
         "editor.suggestFontSize": 16,
         "editor.unicodeHighlight.ambiguousCharacters": false
       }
