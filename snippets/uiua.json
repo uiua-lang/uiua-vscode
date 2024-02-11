@@ -33,5 +33,19 @@
             "⊙;⍉⍥(⍉▽↯⧻,,)2:"
         ],
         "description": "Upscale a matrix"
+    },
+    "Experimental": {
+        "prefix": "experimental",
+        "body": [
+            "# Experimental!"
+        ],
+        "description": "Add an experimental comment"
+    },
+    "Assert": {
+        "prefix": "assert",
+        "body": [
+            "⍤⊃⋅∘≍"
+        ],
+        "description": "Assert that the top two values match"
     }
 }
