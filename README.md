@@ -7,5 +7,6 @@ Features
 - Formatting
 - Snippets
 - Glyph and binding hover
+- Glyph and binding completion
 - Same-file rename
-- Same-file goto definition
+- Goto definition
