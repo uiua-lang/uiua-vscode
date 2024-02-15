@@ -67,6 +67,19 @@
         "language": "uiua",
         "path": "./snippets/uiua.json"
       }
+    ],
+    "commands": [
+      {
+        "title": "Run Uiua",
+        "command": "uiua.run"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "uiua.run",
+        "key": "F5",
+        "when": "editorLangId == uiua"
+      }
     ]
   },
   "scripts": {

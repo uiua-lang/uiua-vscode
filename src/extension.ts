@@ -37,6 +37,23 @@ export function activate(context: vscode.ExtensionContext) {
 	let disposable = client.start();
 
 	context.subscriptions.push(disposable);
+
+	context.subscriptions.push(
+		vscode.commands.registerCommand('uiua.run', async () => {
+			const document = vscode.window.activeTextEditor?.document;
+			document && await document.save().then(() => {
+				const relativeFile = document.uri.fsPath;
+
+				let process = new vscode.ProcessExecution(copyPath, ["run", relativeFile]);
+
+				const task = new vscode.Task({ type: "process" }, vscode.TaskScope.Workspace, "Uiua", "Uiua", process);
+				// https://github.com/microsoft/vscode/issues/157756
+				task.definition.command = "Uiua";
+
+				vscode.tasks.executeTask(task);
+			});
+		})
+	);
 }
 
 export function deactivate() { }
