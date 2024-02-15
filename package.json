@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/uiua-lang/uiua-vscode"
   },
-  "version": "0.0.34",
+  "version": "0.0.35",
   "license": "MIT",
   "publisher": "uiua-lang",
   "readme": "README.md",
@@ -44,8 +44,6 @@
       },
       "editor.semanticTokenColorCustomizations": {
         "rules": {
-          "string": "#20f9fc",
-          "number": "#f85",
           "noadic_function": "#ed5e6a",
           "monadic_function": "#95d16a",
           "dyadic_function": "#54b0fc",
@@ -56,9 +54,9 @@
           "triadic_modifier": "#F5A9B8",
           "module": "#d7be8c"
         },
-        "[*Light*][*Lux*]": {
+        "[The Best Theme]": {
           "rules": {
-            "string": "#1c9"
+            "string": "#20f9fc"
           }
         }
       }
