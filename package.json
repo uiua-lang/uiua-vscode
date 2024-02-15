@@ -44,7 +44,7 @@
       },
       "editor.semanticTokenColorCustomizations": {
         "rules": {
-          "uiua_number": "#f85",
+          "uiua_number": "#ea5",
           "noadic_function": "#ed5e6a",
           "monadic_function": "#95d16a",
           "dyadic_function": "#54b0fc",
