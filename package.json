@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/uiua-lang/uiua-vscode"
   },
-  "version": "0.0.33",
+  "version": "0.0.34",
   "license": "MIT",
   "publisher": "uiua-lang",
   "readme": "README.md",
@@ -36,11 +36,31 @@
     ],
     "configurationDefaults": {
       "[uiua]": {
-        "editor.semanticHighlighting.enabled": "configuredByTheme",
+        "editor.semanticHighlighting.enabled": true,
         "editor.inlayHints.enabled": "on",
         "editor.fontFamily": "Uiua386Color, Uiua386, DejaVu Sans Mono, monospace",
         "editor.suggestFontSize": 16,
         "editor.unicodeHighlight.ambiguousCharacters": false
+      },
+      "editor.semanticTokenColorCustomizations": {
+        "rules": {
+          "string": "#20f9fc",
+          "number": "#f85",
+          "noadic_function": "#ed5e6a",
+          "monadic_function": "#95d16a",
+          "dyadic_function": "#54b0fc",
+          "triadic_function": "#8078f1",
+          "tetradic_function": "#f576d8",
+          "monadic_modifier": "#f0c36f",
+          "dyadic_modifier": "#cc6be9",
+          "triadic_modifier": "#F5A9B8",
+          "module": "#d7be8c"
+        },
+        "[*Light*][*Lux*]": {
+          "rules": {
+            "string": "#1c9"
+          }
+        }
       }
     },
     "configuration": {
