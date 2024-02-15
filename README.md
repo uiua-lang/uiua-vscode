@@ -4,6 +4,7 @@ Requires Uiua to be [installed](https://uiua.org/install).
 
 Features
 - Syntax highlighting
+- Semantic highlighting
 - Formatting
 - Snippets
 - Glyph and binding hover
