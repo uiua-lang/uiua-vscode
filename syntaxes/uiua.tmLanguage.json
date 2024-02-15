@@ -101,7 +101,7 @@
 		},
 		"numbers": {
 			"name": "constant.numeric.uiua",
-			"match": "[`¯]?\\d+([./]\\d+)?(e[+-]?\\d+)?"
+			"match": "[`¯]?(\\d+|eta|pi|tau|inf(i(n(i(t(y)?)?)?)?)?)([./]\\d+)?(e[+-]?\\d+)?"
 		},
 		"strand": {
 			"name": "comment.line",
@@ -112,7 +112,7 @@
 		},
 		"noadic": {
 			"name": "entity.name.tag.uiua",
-			"match": "[⚂ηπτ∞]|(?<![a-zA-Z$])(rand(o(m)?)?|tag|now|eta|pi|tau|inf(i(n(i(t(y)?)?)?)?)?|&sc|&ts|&args|&asr|&args|&asr|&ts|&sc|now|tag)(?![a-zA-Z])"
+			"match": "[⚂]|(?<![a-zA-Z$])(rand(o(m)?)?|tag|now|&sc|&ts|&args|&asr|&args|&asr|&ts|&sc|now|tag)(?![a-zA-Z])"
 		},
 		"monadic": {
 			"name": "string.quoted",
@@ -124,7 +124,7 @@
 		},
 		"mod1": {
 			"name": "entity.name.type.uiua",
-			"match": "[/∧\\\\∵≡⊞⍚⍥⊕⊜⊔⋅⊙⟜∩°]|(?<![a-zA-Z$])(reduce|fol(d)?|scan|eac(h)?|row(s)?|tab(l(e)?)?|inv(e(n(t(o(r(y)?)?)?)?)?)?|rep(e(a(t)?)?)?|gro(u(p)?)?|par(t(i(t(i(o(n)?)?)?)?)?)?|con(t(e(n(t)?)?)?)?|ga(p)?|dip|on|bot(h)?|un|bind|memo|comptime|spawn|shapes|types|dump|&ast|comptime|shapes|types|spawn|&ast|dump|memo|bind)(?![a-zA-Z])"
+			"match": "[/∧\\\\∵≡⊞⍚⍥⊕⊜◇⋅⊙⟜∩°]|(?<![a-zA-Z$])(reduce|fol(d)?|scan|eac(h)?|row(s)?|tab(l(e)?)?|inv(e(n(t(o(r(y)?)?)?)?)?)?|rep(e(a(t)?)?)?|gro(u(p)?)?|par(t(i(t(i(o(n)?)?)?)?)?)?|con(t(e(n(t)?)?)?)?|ga(p)?|dip|on|bot(h)?|un|bind|memo|comptime|spawn|pool|shapes|types|dump|&ast|comptime|shapes|types|spawn|&ast|dump|pool|memo|bind)(?![a-zA-Z])"
 		},
 		"mod2": {
 			"name": "keyword.control.uiua",

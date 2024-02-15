@@ -1,6 +1,7 @@
 import { execSync } from 'child_process';
 import * as vscode from 'vscode';
-import { Command, LanguageClient, LanguageClientOptions, ServerOptions } from 'vscode-languageclient';
+import { LanguageClientOptions } from 'vscode-languageclient';
+import { LanguageClient, ServerOptions } from 'vscode-languageclient/node';
 import { chmodSync, copyFileSync } from 'fs';
 
 export function activate(context: vscode.ExtensionContext) {
@@ -34,9 +35,7 @@ export function activate(context: vscode.ExtensionContext) {
 		clientOptions,
 		true,
 	);
-	let disposable = client.start();
-
-	context.subscriptions.push(disposable);
+	client.start();
 
 	context.subscriptions.push(
 		vscode.commands.registerCommand('uiua.run', async () => {
