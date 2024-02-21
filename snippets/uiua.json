@@ -30,7 +30,7 @@
     "Upscale": {
         "prefix": "upscale",
         "body": [
-            "⊙;⍉⍥(⍉▽↯⧻,,)2:"
+            "°⍉▽▽⧻⟜:⍉▽▽⧻,⟜:"
         ],
         "description": "Upscale a matrix"
     },
@@ -44,7 +44,7 @@
     "Assert": {
         "prefix": "assert",
         "body": [
-            "⍤⊃⋅∘≍"
+            "⍤⟜≍:"
         ],
         "description": "Assert that the top two values match"
     }
