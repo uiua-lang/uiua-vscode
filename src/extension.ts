@@ -12,15 +12,20 @@ export function activate(context: vscode.ExtensionContext) {
 		: execSync('which uiua')).toString().trim();
 	// Copy the interpreter to the extension's folder
 	var extensionPath = context.extensionPath;
-	var copyPath = extensionPath + '/uiua' + (process.platform === 'win32' ? '.exe' : '');
-	copyFileSync(path, copyPath);
-	if (process.platform !== 'win32') {
-		chmodSync(copyPath, 0o755);
+	var runPath = extensionPath + '/uiua' + (process.platform === 'win32' ? '.exe' : '');
+	try {
+		copyFileSync(path, runPath);
+		if (process.platform !== 'win32') {
+			chmodSync(runPath, 0o755);
+		}
+	} catch (e) {
+		console.error('Failed to copy Uiua interpreter to extension folder: ', e);
+		runPath = path;
 	}
 
 	// Start the language server
 	let serverOptions: ServerOptions = {
-		command: copyPath,
+		command: runPath,
 		args: ['lsp'],
 		options: {}
 	};
@@ -43,7 +48,7 @@ export function activate(context: vscode.ExtensionContext) {
 			document && await document.save().then(() => {
 				const relativeFile = document.uri.fsPath;
 
-				let process = new vscode.ProcessExecution(copyPath, ["run", relativeFile]);
+				let process = new vscode.ProcessExecution(runPath, ["run", relativeFile]);
 
 				const task = new vscode.Task({ type: "process" }, vscode.TaskScope.Workspace, "Uiua", "Uiua", process);
 				// https://github.com/microsoft/vscode/issues/157756
