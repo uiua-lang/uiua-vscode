@@ -11,3 +11,5 @@ Features
 - Glyph and binding completion
 - Same-file rename
 - Goto definition
+- Signature inlay hints
+- Macro expansion
