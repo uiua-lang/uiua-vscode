@@ -71,6 +71,21 @@
           "default": "",
           "description": "Path to the Uiua executable used by the Uiua extension. When empty, the extension will try to find the Uiua executable in your PATH environment variable.",
           "editPresentation": "singlelineText"
+        },
+        "uiua.inlayHints.bindingSignatureHints": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show signature hints for bindings."
+        },
+        "uiua.inlayHints.inlineSignatureHints": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show signature hints for inline functions."
+        },
+        "uiua.inlayHints.inlineHintMinLength": {
+          "type": "number",
+          "default": 4,
+          "description": "The minimum length of a function to show signature hints."
         }
       }
     },
