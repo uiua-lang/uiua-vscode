@@ -6,10 +6,12 @@ Features
 - Syntax highlighting
 - Semantic highlighting
 - Formatting
+- On-type formatting
 - Snippets
 - Glyph and binding hover
 - Glyph and binding completion
 - Same-file rename
 - Goto definition
+- Find references
 - Signature inlay hints
 - Macro expansion
