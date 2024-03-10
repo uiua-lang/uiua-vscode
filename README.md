@@ -10,7 +10,7 @@ Features
 - Snippets
 - Glyph and binding hover
 - Glyph and binding completion
-- Same-file rename
+- Binding rename
 - Goto definition
 - Find references
 - Signature inlay hints
