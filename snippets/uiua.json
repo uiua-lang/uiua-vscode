@@ -1,39 +1,4 @@
 {
-    "Partition": {
-        "prefix": "partition",
-        "body": [
-            "⊜${1:()}≠@${2: }."
-        ],
-        "description": "Partition an array by a delimiter"
-    },
-    "Fork": {
-        "prefix": "fork",
-        "body": [
-            "⊃(${1:∘}|${2:∘})"
-        ],
-        "description": "Fork with two functions"
-    },
-    "Unroll": {
-        "prefix": "unroll",
-        "body": [
-            "⊃⋅⋅∘⊙∘"
-        ],
-        "description": "Move the 3rd value on the stack to the top"
-    },
-    "Roll": {
-        "prefix": "roll",
-        "body": [
-            "⊃⋅⊙∘∘"
-        ],
-        "description": "Move the top value on the stack to the 3rd position"
-    },
-    "Upscale": {
-        "prefix": "upscale",
-        "body": [
-            "°⍉▽▽⧻⟜:⍉▽▽⧻,⟜:"
-        ],
-        "description": "Upscale a matrix"
-    },
     "Experimental": {
         "prefix": "experimental",
         "body": [
