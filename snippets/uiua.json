@@ -4,7 +4,14 @@
         "body": [
             "# Experimental!"
         ],
-        "description": "Add an experimental comment"
+        "description": "Add an experimental semantic comment"
+    },
+    "NoInline": {
+        "prefix": "noinline",
+        "body": [
+            "# No Inline!"
+        ],
+        "description": "Add a no inline semantic comment"
     },
     "Assert": {
         "prefix": "assert",
