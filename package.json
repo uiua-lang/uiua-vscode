@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/uiua-lang/uiua-vscode"
   },
-  "version": "0.0.44",
+  "version": "0.0.45",
   "license": "MIT",
   "publisher": "uiua-lang",
   "readme": "README.md",
@@ -96,6 +96,11 @@
           "type": "boolean",
           "default": true,
           "description": "Enable on-type formatting."
+        },
+        "uiua.semanticHighlighting.customTokenTypes": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Uiua-specific token types for semantic highlighting which override default theme colors."
         }
       }
     },
