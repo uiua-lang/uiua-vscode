@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/uiua-lang/uiua-vscode"
   },
-  "version": "0.0.47",
+  "version": "0.0.48",
   "license": "MIT",
   "publisher": "uiua-lang",
   "readme": "README.md",
@@ -53,7 +53,7 @@
           "monadic_modifier": "#f0c36f",
           "dyadic_modifier": "#cc6be9",
           "triadic_modifier": "#F5A9B8",
-          "module": "#d7be8c"
+          "uiua_module": "#d7be8c"
         },
         "[The Best Theme]": {
           "rules": {
