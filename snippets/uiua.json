@@ -13,6 +13,13 @@
         ],
         "description": "Add a no inline semantic comment"
     },
+    "TrackCaller": {
+        "prefix": "trackcaller",
+        "body": [
+            "# Track Caller!"
+        ],
+        "description": "Add a track caller semantic comment"
+    },
     "Assert": {
         "prefix": "assert",
         "body": [
