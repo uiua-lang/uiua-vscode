@@ -115,7 +115,7 @@
 		},
 		"numbers": {
 			"name": "constant.numeric.uiua",
-			"match": "[`¯]?(\\d+|η|π|τ|∞|eta|pi|tau|inf(i(n(i(t(y)?)?)?)?)?)([./]\\d+|e[+-]?\\d+)?"
+			"match": "([`¯]?(\\d+|η|π|τ|∞|eta|pi|tau|inf(i(n(i(t(y)?)?)?)?)?)([./]\\d+|e[+-]?\\d+)?|([₀₁₂₃₄₅₆₇₈₉]|__\\d+)+)"
 		},
 		"strand": {
 			"name": "comment.line",
@@ -125,23 +125,23 @@
 			"match": "---"
 		},
 		"stack": {
-			"match": "[.,:◌?⸮∘]|(?<![a-zA-Z$])(dup(l(i(c(a(t(e)?)?)?)?)?)?|over|flip|po(p)?|stack|trac(e)?|id(e(n(t(i(t(y)?)?)?)?)?)?)(?![a-zA-Z])"
+			"match": "[.,:◌?⸮∘]|(?<![a-zA-Z$])(dup(l(i(c(a(t(e)?)?)?)?)?)?|ove(r)?|fli(p)?|po(p)?|sta(c(k)?)?|trac(e)?|id(e(n(t(i(t(y)?)?)?)?)?)?)(?![a-zA-Z])"
 		},
 		"noadic": {
 			"name": "entity.name.tag.uiua",
-			"match": "[⚂]|(?<![a-zA-Z$])(rand(o(m)?)?|tag|now|&sc|&ts|&args|&clget|&asr|&clget|&args|&asr|&ts|&sc|now|tag)(?![a-zA-Z])"
+			"match": "[⚂]|(?<![a-zA-Z$])(rand(o(m)?)?|tag|now|timezone|&sc|&ts|&args|&clget|&asr|timezone|&clget|&args|&asr|&ts|&sc|now|tag)(?![a-zA-Z])"
 		},
 		"monadic": {
 			"name": "string.quoted",
-			"match": "[¬±¯`⌵√∿⌊⌈⁅⧻△⇡⊢⇌♭¤⋯⍉⍏⍖⊚⊛◴◰□⋕]|(?<![a-zA-Z$])(not|sig(n)?|neg(a(t(e)?)?)?|abs(o(l(u(t(e( (v(a(l(u(e)?)?)?)?)?)?)?)?)?)?)?|sqr(t)?|sin(e)?|flo(o(r)?)?|cei(l(i(n(g)?)?)?)?|rou(n(d)?)?|len(g(t(h)?)?)?|sha(p(e)?)?|ran(g(e)?)?|fir(s(t)?)?|rev(e(r(s(e)?)?)?)?|des(h(a(p(e)?)?)?)?|fix|bit(s)?|tra(n(s(p(o(s(e)?)?)?)?)?)?|ris(e)?|fal(l)?|whe(r(e)?)?|cla(s(s(i(f(y)?)?)?)?)?|ded(u(p(l(i(c(a(t(e)?)?)?)?)?)?)?)?|uni(q(u(e)?)?)?|box|pars(e)?|wait|recv|tryrecv|gen|utf(₈)?|type|datetime|fft|json|csv|xlsx|repr|&s|&pf|&p|&exit|&raw|&var|&runi|&runc|&runs|&cd|&clset|&sl|&invk|&cl|&fo|&fc|&fmd|&fde|&ftr|&fe|&fld|&fif|&fras|&frab|&ims|&ap|&tcpl|&tlsl|&tcpa|&tcpc|&tlsc|&tcpsnb|&tcpaddr|&camcap|&memfree|&memfree|&tcpaddr|datetime|&camcap|&tcpsnb|tryrecv|&clset|utf₈|&tlsc|&tcpc|&tcpa|&tlsl|&tcpl|&frab|&fras|&invk|&runs|&runc|&runi|&exit|&ims|&fif|&fld|&ftr|&fde|&fmd|&var|&raw|repr|xlsx|json|type|recv|wait|&ap|&fe|&fc|&fo|&cl|&sl|&cd|&pf|csv|fft|gen|&p|&s)(?![a-zA-Z])|⋊[a-zA-Z]*"
+			"match": "[¬±¯`⌵√∿⌊⌈⁅⧻△⇡⊢⊣⇌♭¤⋯⍉⍆⍏⍖⊚⊛◴◰□⋕]|(?<![a-zA-Z$])(not|sig(n)?|neg(a(t(e)?)?)?|abs(o(l(u(t(e( (v(a(l(u(e)?)?)?)?)?)?)?)?)?)?)?|sqr(t)?|sin(e)?|flo(o(r)?)?|cei(l(i(n(g)?)?)?)?|rou(n(d)?)?|len(g(t(h)?)?)?|sha(p(e)?)?|ran(g(e)?)?|fir(s(t)?)?|las(t)?|rev(e(r(s(e)?)?)?)?|des(h(a(p(e)?)?)?)?|fix|bit(s)?|tra(n(s(p(o(s(e)?)?)?)?)?)?|sor(t)?|ris(e)?|fal(l)?|whe(r(e)?)?|cla(s(s(i(f(y)?)?)?)?)?|ded(u(p(l(i(c(a(t(e)?)?)?)?)?)?)?)?|uni(q(u(e)?)?)?|box|pars(e)?|wait|recv|tryrecv|gen|utf(₈)?|graphemes|type|datetime|fft|json|csv|xlsx|repr|&s|&pf|&p|&exit|&raw|&var|&runi|&runc|&runs|&cd|&clset|&sl|&invk|&cl|&fo|&fc|&fmd|&fde|&ftr|&fe|&fld|&fif|&fras|&frab|&ims|&ap|&tcpl|&tlsl|&tcpa|&tcpc|&tlsc|&tcpsnb|&tcpaddr|&camcap|&memfree|graphemes|&memfree|&tcpaddr|datetime|&camcap|&tcpsnb|tryrecv|&clset|utf₈|&tlsc|&tcpc|&tcpa|&tlsl|&tcpl|&frab|&fras|&invk|&runs|&runc|&runi|&exit|&ims|&fif|&fld|&ftr|&fde|&fmd|&var|&raw|repr|xlsx|json|type|recv|wait|&ap|&fe|&fc|&fo|&cl|&sl|&cd|&pf|csv|fft|gen|&p|&s)(?![a-zA-Z])|⋊[a-zA-Z]*"
 		},
 		"dyadic": {
 			"name": "entity.name.function.uiua",
-			"match": "[==≠<≤>≥+\\-×\\*÷%◿ⁿₙ↧↥∠ℂ≍⊟⊂⊏⊡↯☇↙↘↻⮌◫⑄▽⌕⦷∈⊗⍤]|(?<![a-zA-Z$])(equals|not (e(q(u(a(l(s)?)?)?)?)?)?|less than|les(s( (o(r( (e(q(u(a(l)?)?)?)?)?)?)?)?)?)?|greater than|gre(a(t(e(r( (o(r( (e(q(u(a(l)?)?)?)?)?)?)?)?)?)?)?)?)?|add|subtract|mul(t(i(p(l(y)?)?)?)?)?|div(i(d(e)?)?)?|mod(u(l(u(s)?)?)?)?|pow(e(r)?)?|log(a(r(i(t(h(m)?)?)?)?)?)?|min(i(m(u(m)?)?)?)?|max(i(m(u(m)?)?)?)?|ata(n(g(e(n(t)?)?)?)?)?|com(p(l(e(x)?)?)?)?|mat(c(h)?)?|cou(p(l(e)?)?)?|joi(n)?|sel(e(c(t)?)?)?|pic(k)?|res(h(a(p(e)?)?)?)?|rer(a(n(k)?)?)?|tak(e)?|dro(p)?|rot(a(t(e)?)?)?|ori(e(n(t)?)?)?|win(d(o(w(s)?)?)?)?|chu(n(k(s)?)?)?|kee(p)?|fin(d)?|mas(k)?|mem(b(e(r(o(f)?)?)?)?)?|ind(e(x(o(f)?)?)?)?|choose|permute|ass(e(r(t)?)?)?|send|regex|map|has|get|remove|img|gif|&rs|&rb|&ru|&w|&fwa|&gifs|&tcpsrt|&tcpswt|&ffi|&tcpswt|&tcpsrt|permute|remove|choose|&gifs|regex|&ffi|&fwa|send|&ru|&rb|&rs|gif|img|get|has|map|&w)(?![a-zA-Z])"
+			"match": "[==≠<≤>≥+\\-×\\*÷%◿ⁿₙ↧↥∠ℂ≍⊟⊂⊏⊡↯☇↙↘↻⤸◫▽⌕⦷∈⊗⍤]|(?<![a-zA-Z$])(eq(u(a(l(s)?)?)?)?|not (e(q(u(a(l(s)?)?)?)?)?)?|less t(h(a(n)?)?)?|le(s(s( (o(r( (e(q(u(a(l)?)?)?)?)?)?)?)?)?)?)?|greater t(h(a(n)?)?)?|greater o(r( (e(q(u(a(l)?)?)?)?)?)?)?|add|sub(t(r(a(c(t)?)?)?)?)?|mul(t(i(p(l(y)?)?)?)?)?|div(i(d(e)?)?)?|mod(u(l(u(s)?)?)?)?|pow(e(r)?)?|log(a(r(i(t(h(m)?)?)?)?)?)?|min(i(m(u(m)?)?)?)?|max(i(m(u(m)?)?)?)?|ata(n(g(e(n(t)?)?)?)?)?|com(p(l(e(x)?)?)?)?|mat(c(h)?)?|cou(p(l(e)?)?)?|joi(n)?|sel(e(c(t)?)?)?|pic(k)?|res(h(a(p(e)?)?)?)?|rer(a(n(k)?)?)?|tak(e)?|dro(p)?|rot(a(t(e)?)?)?|ori(e(n(t)?)?)?|win(d(o(w(s)?)?)?)?|kee(p)?|fin(d)?|mas(k)?|mem(b(e(r(o(f)?)?)?)?)?|ind(e(x(o(f)?)?)?)?|base|ass(e(r(t)?)?)?|send|regex|map|has|get|remove|img|gif|layout|&rs|&rb|&ru|&w|&fwa|&gifs|&tcpsrt|&tcpswt|&ffi|&tcpswt|&tcpsrt|layout|remove|&gifs|regex|&ffi|&fwa|send|base|&ru|&rb|&rs|gif|img|get|has|map|&w)(?![a-zA-Z])"
 		},
 		"mod1": {
 			"name": "entity.name.type.uiua",
-			"match": "[/∧\\\\∵≡⊞⍚⍥⊕⊜◹◇⋅⊙⟜⤙⤚⊸◠◡∩¨°]|(?<![a-zA-Z$])(reduce|fol(d)?|scan|eac(h)?|row(s)?|tab(l(e)?)?|inv(e(n(t(o(r(y)?)?)?)?)?)?|rep(e(a(t)?)?)?|gro(u(p)?)?|par(t(i(t(i(o(n)?)?)?)?)?)?|tri(a(n(g(l(e)?)?)?)?)?|con(t(e(n(t)?)?)?)?|ga(p)?|dip|on|but|wit(h)?|by|abo(v(e)?)?|bel(o(w)?)?|bot(h)?|bac(k(w(a(r(d)?)?)?)?)?|un|case|memo|comptime|spawn|pool|dump|stringify|quote|signature|struct|&ast|signature|stringify|comptime|struct|quote|spawn|&ast|dump|pool|memo|case)(?![a-zA-Z])"
+			"match": "[/∧\\\\∵≡⊞⧅⍚⍥⊕⊜◇⋅⊙⟜⤙⤚⊸◠◡∩˜°˘]|(?<![a-zA-Z$])(red(u(c(e)?)?)?|fol(d)?|sca(n)?|eac(h)?|row(s)?|tab(l(e)?)?|tup(l(e(s)?)?)?|inv(e(n(t(o(r(y)?)?)?)?)?)?|rep(e(a(t)?)?)?|gro(u(p)?)?|par(t(i(t(i(o(n)?)?)?)?)?)?|con(t(e(n(t)?)?)?)?|ga(p)?|dip|on|wit(h)?|off|by|abo(v(e)?)?|bel(o(w)?)?|bot(h)?|bac(k(w(a(r(d)?)?)?)?)?|un|ant(i)?|case|memo|comptime|spawn|pool|dump|stringify|quote|signature|struct|&ast|signature|stringify|comptime|struct|quote|spawn|&ast|dump|pool|memo|case)(?![a-zA-Z])"
 		},
 		"mod2": {
 			"name": "keyword.control.uiua",
