@@ -1,6 +1,10 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Uiua",
+	"firstLineMatch": "^#!/.*\buiua\b",
+	"fileTypes": [
+		"ua"
+	],
 	"patterns": [
 		{
 			"include": "#comments"
@@ -129,7 +133,7 @@
 		},
 		"noadic": {
 			"name": "entity.name.tag.uiua",
-			"match": "[⚂]|(?<![a-zA-Z$])(rand(o(m)?)?|tag|now|timezone|&sc|&ts|&args|&clip|&asr|timezone|&clip|&args|&asr|&ts|&sc|now|tag)(?![a-zA-Z])"
+			"match": "[⚂]|(?<![a-zA-Z$])(rand(o(m)?)?|tag|now|timezone|&b|&sc|&ts|&args|&clip|&asr|timezone|&clip|&args|&asr|&ts|&sc|now|tag|&b)(?![a-zA-Z])"
 		},
 		"monadic": {
 			"name": "string.quoted",
@@ -137,11 +141,11 @@
 		},
 		"dyadic": {
 			"name": "entity.name.function.uiua",
-			"match": "[==≠<≤>≥+\\-×\\*÷%◿∨ⁿₙ↧↥∠ℂ≍⊟⊂⊏⊡↯↙↘↻⤸◫▽⌕⦷∈⊗⍤]|(?<![a-zA-Z$])(eq(u(a(l(s)?)?)?)?|not (e(q(u(a(l(s)?)?)?)?)?)?|less t(h(a(n)?)?)?|le(s(s( (o(r( (e(q(u(a(l)?)?)?)?)?)?)?)?)?)?)?|greater t(h(a(n)?)?)?|greater o(r( (e(q(u(a(l)?)?)?)?)?)?)?|add|sub(t(r(a(c(t)?)?)?)?)?|mul(t(i(p(l(y)?)?)?)?)?|div(i(d(e)?)?)?|mod(u(l(u(s)?)?)?)?|or|pow(e(r)?)?|log(a(r(i(t(h(m)?)?)?)?)?)?|min(i(m(u(m)?)?)?)?|max(i(m(u(m)?)?)?)?|ata(n(g(e(n(t)?)?)?)?)?|com(p(l(e(x)?)?)?)?|mat(c(h)?)?|cou(p(l(e)?)?)?|joi(n)?|sel(e(c(t)?)?)?|pic(k)?|res(h(a(p(e)?)?)?)?|tak(e)?|dro(p)?|rot(a(t(e)?)?)?|ori(e(n(t)?)?)?|win(d(o(w(s)?)?)?)?|kee(p)?|fin(d)?|mas(k)?|mem(b(e(r(o(f)?)?)?)?)?|ind(e(x(o(f)?)?)?)?|base|ass(e(r(t)?)?)?|send|gen|regex|map|has|get|remove|img|gif|layout|&rs|&rb|&ru|&w|&fwa|&gifs|&tcpsrt|&tcpswt|&ffi|&tcpswt|&tcpsrt|layout|remove|&gifs|regex|&ffi|&fwa|send|base|&ru|&rb|&rs|gif|img|get|has|map|gen|&w)(?![a-zA-Z])"
+			"match": "[==≠<≤>≥+\\-×\\*÷%◿∨ⁿₙ↧↥∠ℂ≍⊟⊂⊏⊡↯↙↘↻⤸▽⌕⦷∈⊗⍤]|(?<![a-zA-Z$])(eq(u(a(l(s)?)?)?)?|not (e(q(u(a(l(s)?)?)?)?)?)?|less t(h(a(n)?)?)?|le(s(s( (o(r( (e(q(u(a(l)?)?)?)?)?)?)?)?)?)?)?|greater t(h(a(n)?)?)?|greater o(r( (e(q(u(a(l)?)?)?)?)?)?)?|add|sub(t(r(a(c(t)?)?)?)?)?|mul(t(i(p(l(y)?)?)?)?)?|div(i(d(e)?)?)?|mod(u(l(u(s)?)?)?)?|or|pow(e(r)?)?|log(a(r(i(t(h(m)?)?)?)?)?)?|min(i(m(u(m)?)?)?)?|max(i(m(u(m)?)?)?)?|ata(n(g(e(n(t)?)?)?)?)?|com(p(l(e(x)?)?)?)?|mat(c(h)?)?|cou(p(l(e)?)?)?|joi(n)?|sel(e(c(t)?)?)?|pic(k)?|res(h(a(p(e)?)?)?)?|tak(e)?|dro(p)?|rot(a(t(e)?)?)?|ori(e(n(t)?)?)?|kee(p)?|fin(d)?|mas(k)?|mem(b(e(r(o(f)?)?)?)?)?|ind(e(x(o(f)?)?)?)?|base|ass(e(r(t)?)?)?|send|gen|regex|map|has|get|remove|img|gif|layout|&rs|&rb|&ru|&w|&fwa|&gifs|&tcpsrt|&tcpswt|&ffi|&tcpswt|&tcpsrt|layout|remove|&gifs|regex|&ffi|&fwa|send|base|&ru|&rb|&rs|gif|img|get|has|map|gen|&w)(?![a-zA-Z])"
 		},
 		"mod1": {
 			"name": "entity.name.type.uiua",
-			"match": "[/∧\\\\∵≡⍚⊞⧅⍥⊕⊜◇⋅⊙⟜⊸⤙⤚◠◡𝄈∩⌅°⌝⍩∂∫]|(?<![a-zA-Z$])(red(u(c(e)?)?)?|fol(d)?|sca(n)?|eac(h)?|row(s)?|inv(e(n(t(o(r(y)?)?)?)?)?)?|tab(l(e)?)?|tup(l(e(s)?)?)?|rep(e(a(t)?)?)?|gro(u(p)?)?|par(t(i(t(i(o(n)?)?)?)?)?)?|con(t(e(n(t)?)?)?)?|ga(p)?|dip|on|by|wit(h)?|off|abo(v(e)?)?|bel(o(w)?)?|bac(k(w(a(r(d)?)?)?)?)?|bot(h)?|obv(e(r(s(e)?)?)?)?|un|ant(i)?|cas(e)?|memo|comptime|spawn|pool|dump|quote|der(i(v(a(t(i(v(e)?)?)?)?)?)?)?|int(e(g(r(a(l)?)?)?)?)?|&ast|comptime|quote|spawn|&ast|dump|pool|memo)(?![a-zA-Z])"
+			"match": "[/∧\\\\∵≡⍚⊞⧅⧈⍥⊕⊜◇⋅⊙𝄐⟜⊸⤙⤚◠◡𝄈∩⌅°⌝⍩∂∫]|(?<![a-zA-Z$])(red(u(c(e)?)?)?|fol(d)?|sca(n)?|eac(h)?|row(s)?|inv(e(n(t(o(r(y)?)?)?)?)?)?|tab(l(e)?)?|tup(l(e(s)?)?)?|st(e(n(c(i(l)?)?)?)?)?|rep(e(a(t)?)?)?|gro(u(p)?)?|par(t(i(t(i(o(n)?)?)?)?)?)?|con(t(e(n(t)?)?)?)?|ga(p)?|dip|rea(c(h)?)?|on|by|wit(h)?|off|abo(v(e)?)?|bel(o(w)?)?|bac(k(w(a(r(d)?)?)?)?)?|bot(h)?|obv(e(r(s(e)?)?)?)?|un|ant(i)?|cas(e)?|memo|comptime|spawn|pool|dump|quote|der(i(v(a(t(i(v(e)?)?)?)?)?)?)?|int(e(g(r(a(l)?)?)?)?)?|&rl|&ast|comptime|quote|spawn|&ast|dump|pool|memo|&rl)(?![a-zA-Z])"
 		},
 		"mod2": {
 			"name": "keyword.control.uiua",
