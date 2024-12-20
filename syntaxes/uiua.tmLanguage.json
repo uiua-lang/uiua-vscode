@@ -61,7 +61,7 @@
 	"repository": {
 		"idents": {
 			"name": "variable.parameter.uiua",
-			"match": "\\b[a-zA-Z]+[!‼]*\\b"
+			"match": "\\b[a-zA-Z]+([₀₁₂₃₄₅₆₇₈₉]|__\\d+)*[!‼]*\\b"
 		},
 		"comments": {
 			"name": "comment.line.uiua",
@@ -119,7 +119,7 @@
 		},
 		"numbers": {
 			"name": "constant.numeric.uiua",
-			"match": "([`¯]?(\\d+|η|π|τ|∞|eta|pi|tau|inf(i(n(i(t(y)?)?)?)?)?)([./]\\d+|e[+-]?\\d+)?|([₀₁₂₃₄₅₆₇₈₉]|__\\d+)+)"
+			"match": "[`¯]?(\\d+|η|π|τ|∞|eta|pi|tau|inf(i(n(i(t(y)?)?)?)?)?)([./]\\d+|e[+-]?\\d+)?"
 		},
 		"strand": {
 			"name": "comment.line",
@@ -129,7 +129,7 @@
 			"match": "---"
 		},
 		"stack": {
-			"match": "[.,’'::◌?∘]|(?<![a-zA-Z$])(dup(l(i(c(a(t(e)?)?)?)?)?)?|ove(r)?|aro(u(n(d)?)?)?|fli(p)?|po(p)?|sta(c(k)?)?|id(e(n(t(i(t(y)?)?)?)?)?)?)(?![a-zA-Z])"
+			"match": "[.,::◌?∘]|(?<![a-zA-Z$])(dup(l(i(c(a(t(e)?)?)?)?)?)?|ove(r)?|fli(p)?|po(p)?|sta(c(k)?)?|id(e(n(t(i(t(y)?)?)?)?)?)?)(?![a-zA-Z])"
 		},
 		"noadic": {
 			"name": "entity.name.tag.uiua",
