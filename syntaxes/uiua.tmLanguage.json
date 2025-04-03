@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Uiua",
-	"firstLineMatch": "^#!/.*\buiua\b",
+	"firstLineMatch": "^#!/.*\\buiua\\b",
 	"fileTypes": [
 		"ua"
 	],
@@ -129,7 +129,7 @@
 			"match": "---"
 		},
 		"stack": {
-			"match": "[.,::◌?∘]|(?<![a-zA-Z$])(dup(l(i(c(a(t(e)?)?)?)?)?)?|ove(r)?|fli(p)?|po(p)?|sta(c(k)?)?|id(e(n(t(i(t(y)?)?)?)?)?)?)(?![a-zA-Z])"
+			"match": "[.::◌?∘]|(?<![a-zA-Z$])(dup(l(i(c(a(t(e)?)?)?)?)?)?|fli(p)?|po(p)?|sta(c(k)?)?|id(e(n(t(i(t(y)?)?)?)?)?)?)(?![a-zA-Z])"
 		},
 		"noadic": {
 			"name": "entity.name.tag.uiua",
@@ -145,7 +145,7 @@
 		},
 		"mod1": {
 			"name": "entity.name.type.uiua",
-			"match": "[/∧\\\\∵≡⍚⊞⧅⧈⍥⊕⊜◇⋅⊙𝄐⟜⊸⤙⤚◠◡𝄈∩⌅°⌝⍩∂∫]|(?<![a-zA-Z$])(red(u(c(e)?)?)?|fol(d)?|sca(n)?|eac(h)?|row(s)?|inv(e(n(t(o(r(y)?)?)?)?)?)?|tab(l(e)?)?|tup(l(e(s)?)?)?|st(e(n(c(i(l)?)?)?)?)?|rep(e(a(t)?)?)?|gro(u(p)?)?|par(t(i(t(i(o(n)?)?)?)?)?)?|con(t(e(n(t)?)?)?)?|ga(p)?|dip|rea(c(h)?)?|on|by|wit(h)?|off|abo(v(e)?)?|bel(o(w)?)?|bac(k(w(a(r(d)?)?)?)?)?|bot(h)?|obv(e(r(s(e)?)?)?)?|un|ant(i)?|cas(e)?|memo|comptime|spawn|pool|dump|quote|der(i(v(a(t(i(v(e)?)?)?)?)?)?)?|int(e(g(r(a(l)?)?)?)?)?|&rl|&ast|comptime|quote|spawn|&ast|dump|pool|memo|&rl)(?![a-zA-Z])"
+			"match": "[/∧\\\\∵≡⍚⊞⧅⧈⍥⊕⊜◇⋅⊙𝄐⟜⊸⤙⤚◠◡˙˜∩⌅°⌝⍩∂∫]|(?<![a-zA-Z$])(red(u(c(e)?)?)?|fol(d)?|sca(n)?|eac(h)?|row(s)?|inv(e(n(t(o(r(y)?)?)?)?)?)?|tab(l(e)?)?|tup(l(e(s)?)?)?|st(e(n(c(i(l)?)?)?)?)?|rep(e(a(t)?)?)?|gro(u(p)?)?|par(t(i(t(i(o(n)?)?)?)?)?)?|con(t(e(n(t)?)?)?)?|ga(p)?|dip|rea(c(h)?)?|on|by|wit(h)?|off|abo(v(e)?)?|bel(o(w)?)?|self|bac(k(w(a(r(d)?)?)?)?)?|bot(h)?|obv(e(r(s(e)?)?)?)?|un|ant(i)?|cas(e)?|memo|comptime|spawn|pool|dump|quote|der(i(v(a(t(i(v(e)?)?)?)?)?)?)?|int(e(g(r(a(l)?)?)?)?)?|&rl|&ast|comptime|quote|spawn|&ast|dump|pool|memo|&rl)(?![a-zA-Z])"
 		},
 		"mod2": {
 			"name": "keyword.control.uiua",
