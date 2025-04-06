@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/uiua-lang/uiua-vscode"
   },
-  "version": "0.0.62",
+  "version": "0.0.63",
   "license": "MIT",
   "publisher": "uiua-lang",
   "readme": "README.md",
@@ -40,7 +40,8 @@
         "editor.inlayHints.enabled": "on",
         "editor.fontFamily": "Uiua386Color, Uiua386, DejaVu Sans Mono, monospace",
         "editor.suggestFontSize": 16,
-        "editor.unicodeHighlight.ambiguousCharacters": false
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.wordSeparators": "~@#$%^*()-=+[{]}\\|;:'\",.<>/?◠⌵+⌝’⍤∠˜◡⋯∩□⊓⊸⍩⌈⊛ℂ◇⊟◴∂♭⊙÷⍢↘.∵=η⍖⬚⌕⊢¤:⌊∧⊃⋅≥>⊕∘⊗∞∫⍚⊂▽⊣⧻≤<ₙ⦷≍↥∊↧◿×¯¬≠⌅⤚⟜∨⤸,⋕⊜π⊡◌ⁿ⚂⇡𝄐/⍥☇↯⇌⍏↻⁅≡\\⊏˙△±∿⍆√?⧈-⨬⊞↙τ⸮⍉⍣⧅°⍜◰⊚◫⤙"
       },
       "editor.semanticTokenColorCustomizations": {
         "rules": {
