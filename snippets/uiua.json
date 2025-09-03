@@ -19,12 +19,5 @@
             "# Track Caller!"
         ],
         "description": "Add a track caller semantic comment"
-    },
-    "Assert": {
-        "prefix": "assert",
-        "body": [
-            "⍤⟜≍:"
-        ],
-        "description": "Assert that the top two values match"
     }
 }
